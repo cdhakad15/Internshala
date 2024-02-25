@@ -1,0 +1,83 @@
+/* External CSS styles */
+/* Add your custom styles here */
+
+/* Set fixed dimensions for grid items */
+.grid-item {
+    /* Adjust height as needed */
+   display: flex;
+   flex-direction: column;
+   /* align-items: center;
+   justify-content: center; */
+   flex-wrap: wrap;
+   width: 150px;
+   height: 50px;
+   gap: 2px;
+  /* // max-width: 1300px; */
+   margin: 5px;
+}
+
+/* Set fixed dimensions for images */
+.grid-item img {
+   /* width: 100%;
+   height: ;
+   object-fit: cover; */
+   /* width: 380px; */
+   /* aspect-ratio: 1/1;
+   object-fit: cover; */
+   width: 370px;
+   height: 180px;
+   
+}
+
+/* Optional: Adjust card height to fit content */
+.card {
+    height: auto; 
+    width: 220px;
+    margin: 2rem;
+    /* padding: 1rem; */
+    display: flex;
+    background-color:#E0E0E0;
+    flex-direction: column;
+    border-radius: 10px;
+    border: 1px solid white ;
+    gap: 2px;
+    /* align-items: center; */
+    /* box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px; */
+    transition: background-color 0.3s ease, box-shadow 0.3s ease; /* Smooth transitions */
+
+  
+}
+
+.role:hover{
+   background-color: 00CC99;
+   color: white;
+   transition: background-color 0.3s ease;
+   cursor: pointer;
+   
+}
+
+.image-container{
+   width: 220px !important;
+   /* border-radius: 10px;
+    border: 1px solid white ; */
+}
+.role{
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   width: 220px;
+  
+  
+}
+.content{
+   border-radius: 20px;
+    border: 1px solid white ;
+    
+}
+
+.card:hover{
+    cursor: pointer;
+    background-color: 00CC99; /* New background color on hover */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}

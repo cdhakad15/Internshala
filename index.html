@@ -1,0 +1,49 @@
+</html>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Doctor Gallery</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <style>
+        /* Adjustments or additional styles can be added here */
+        .doctor-card {
+            background-color: #F3F4F6;
+            transition: all 0.3s ease;
+            border-radius: 1rem;
+           
+        }
+
+        .doctor-card:hover {
+            box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+            transform: translateY(-2px);
+        }
+
+        .doctor-card:hover .text-white {
+            color: white;
+        }
+
+        .doctor-card:hover {
+            background-color: #10B981;
+        }
+    </style>
+</head>
+<body class="bg-gray-200 p-4">
+    <h1 class="text-center text-4xl p-4 ">
+        Se<span class="border-b-2  border-green-500">lect Doc</span>tor
+        </h1>
+    <div class="container mx-auto">
+    
+        <div id="doctorGrid" class="grid grid-cols-4 gap-1 "></div>
+        <div class="mt-12 flex justify-between">
+            <button id="prevPageButton" class="bg-blue-500 hover:bg-blue-700 text-white  py-3 px-2 rounded focus:outline-none focus:shadow-outline" disabled>Previous</button>
+            <button id="nextPageButton" class="bg-blue-500 hover:bg-blue-700 text-white  py-3 px-2 rounded focus:outline-none focus:shadow-outline">Next</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
